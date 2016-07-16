@@ -1,3 +1,4 @@
-# Node.js
-## express
+# MEAN
+## MEAN:Mongodb、Express、Angular、Node
 ### wechat
+#### npm start

@@ -12,6 +12,8 @@ var routes = require('./lib/routes/index');
 var users = require('./lib/routes/users');
 var wechat = require('./lib/routes/wechat');
 
+var books = require('./lib/routes/books');
+
 var app = express();
 
 // view engine setup
@@ -29,6 +31,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 app.use('/wechat', wechat);
+
+app.use('/api', books);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

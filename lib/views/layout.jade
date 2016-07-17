@@ -1,7 +1,39 @@
 doctype html
 html
   head
+    meta(charset='utf-8')
+    meta(name='viewpot', content='width=device-width, initial-scale=1')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+
     title= title
+
+    link(rel='stylesheet', href='//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+    nav.navbar.navbar-default.navbar-fixed-top.navbar-inverse
+      .container
+        .navbar-header
+          a.navbar-brand(href='/') LiaoJunCong
+
+        .collapse.navbar-collapse
+          ul.nav.navbar-nav.pull-right
+            li
+              a(href='/') 首页
+            li
+              a(href='/Books') 读物
+            li
+              a(href='/About') 关于
+            li
+              a(href='/Register') 注册
+            li
+              a(href='/Login') 登录
+    .content.container
+      block content
+
+    footer.container
+      .row
+        .col-xs-12
+          small &copy; liaojuncong 2016
+
+  script(src='//cdn.bootcss.com/jquery/2.2.4/jquery.js')
+  script(src='//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.js')

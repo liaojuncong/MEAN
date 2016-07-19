@@ -7,7 +7,7 @@ block content
       each book in books
         .row.booklist
           .col-md-2
-            img(src='#{book.img}')
+            img(src='#{book.img}', style='width:108px;')
           .col-md-10
             p
               a(href='/Detail/#{book._id}')=book.title

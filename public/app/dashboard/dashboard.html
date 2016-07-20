@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-md-9 page">
+        <div class="row topictype"><a href="/" class="label label-info"> 全部</a><a href="/">读书</a><a href="/">书评</a><a href="/">求书</a><a href="/">求索</a></div>
+        <div class="row topiclist" ng-repeat="x in list">
+            <img ng-src="{{x.img}}">
+            <span class="count">
+                <i class="coment" ng-bind="x.commentCount"></i>
+                <i>/</i>
+                <i ng-bind="x.visitedCount"></i>
+            </span>
+            <span class="label label-info" ng-bind="x.type"></span>
+            <a href="/">{{x.title}}</a>
+            <span class="pull-right">{{x.postTime}}</span>
+            <a href="/" class="pull-right author">{{x.author}}</a>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="userinfo">
+            <p>liaojuncong</p><a href="#/book" class="btn btn-info">新增推荐</a></div>
+    </div>
+</div>

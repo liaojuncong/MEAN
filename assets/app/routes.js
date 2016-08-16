@@ -15,7 +15,8 @@ congApp.config(["$stateProvider", "$urlRouterProvider", function ($stateProvider
                             serie: true,
                             insertBefore: "#ng_load_plugins_before",
                             files: [
-                                "/app/dashboard/dashboard.js"
+                                "/app/dashboard/dashboard.js",
+                                "/app/services/topicservice.js",
                             ]
                         });
                     }

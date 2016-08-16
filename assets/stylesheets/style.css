@@ -36,9 +36,9 @@ a.navbar-brand{color: #fff !important}
 .bookdetail h3{ text-indent: 10px;margin: 20px 0;border-bottom: 1px gainsboro solid;padding: 0 0 10px 0}
 .brief{ padding-left: 10px;line-height: 25px}
 /*index*/
-.topiclist{ margin: 20px 0;font-size: medium;}
+.topiclist{ margin: 20px 0;}
 .topiclist span{ margin-right: 10px;}
-.topiclist span.count{ width: 50px;display: inline-block;color: gray;}
+.topiclist span.count{ width: 70px;display: inline-block;color: gray;}
 .topiclist a{ color: #333;}
 .topiclist a:hover{ text-decoration: none;color: #00b7ff;}
 .topiclist .pull-right{ font-size: small;color: gray;}
